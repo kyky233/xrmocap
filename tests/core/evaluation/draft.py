@@ -1,8 +1,6 @@
-import _init_paths
-import xrmocap
-
-
 def main():
+
+    import xrmocap
     print(f"this is the end!")
 
 
