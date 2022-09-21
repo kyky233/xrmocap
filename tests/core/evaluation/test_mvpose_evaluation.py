@@ -1,7 +1,7 @@
 import mmcv
 import os
 import os.path as osp
-# import pytest
+import pytest
 import shutil
 import torch
 
