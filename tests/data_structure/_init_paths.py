@@ -9,6 +9,6 @@ def add_path(path):
 
 this_dir = osp.dirname(__file__)
 
-lib_path = osp.join(this_dir, '../xrmocap')
+lib_path = osp.join(this_dir, '../../../xrmocap')
 add_path(lib_path)
 print(f"=> add path: {osp.abspath(lib_path)}")

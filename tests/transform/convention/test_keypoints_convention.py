@@ -2,6 +2,7 @@
 import numpy as np
 import torch
 
+import _init_paths
 from xrmocap.data_structure.keypoints import Keypoints
 from xrmocap.transform.convention.keypoints_convention import (
     convert_keypoints, get_keypoint_num, get_mapping_dict,

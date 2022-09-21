@@ -1,5 +1,6 @@
 import mmcv
 
+import _init_paths
 from xrmocap.data.dataloader.builder import build_dataloader
 from xrmocap.data.dataset.builder import build_dataset
 

@@ -2,6 +2,7 @@ import numpy as np
 import pytest
 import torch
 
+import _init_paths
 from xrmocap.data_structure.limbs import Limbs
 
 output_dir = 'tests/data/output/data_structure/' +\

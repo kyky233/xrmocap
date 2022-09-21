@@ -5,6 +5,7 @@ import shutil
 import torch
 from xrprimer.utils.path_utils import Existence, check_path_existence
 
+import _init_paths
 from xrmocap.data.data_converter.builder import build_data_converter
 
 input_dir = 'tests/data/data/test_data_converter'

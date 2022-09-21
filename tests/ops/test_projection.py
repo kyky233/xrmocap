@@ -6,6 +6,7 @@ import pytest
 import shutil
 from xrprimer.data_structure.camera import PinholeCameraParameter
 
+import _init_paths
 from xrmocap.ops.projection.builder import build_projector
 
 input_dir = 'tests/data/ops/test_projection'

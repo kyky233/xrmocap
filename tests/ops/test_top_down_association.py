@@ -4,6 +4,7 @@ import pytest
 import shutil
 import torch
 
+import _init_paths
 from xrmocap.ops.top_down_association.builder import build_top_down_associator
 
 output_dir = 'tests/data/output/ops/test_top_down_association'

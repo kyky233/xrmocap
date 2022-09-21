@@ -1,3 +1,4 @@
+import _init_paths
 from xrmocap.data_structure.smc_reader import SMCReader
 from xrmocap.io.camera import get_color_camera_parameter_from_smc
 

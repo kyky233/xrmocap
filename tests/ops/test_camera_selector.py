@@ -5,6 +5,7 @@ import pytest
 from os.path import join
 from xrprimer.data_structure.camera import FisheyeCameraParameter
 
+import _init_paths
 from xrmocap.ops.triangulation.builder import build_triangulator
 from xrmocap.ops.triangulation.point_selection.builder import (
     build_point_selector,

@@ -4,6 +4,7 @@ import os
 import pytest
 import shutil
 
+import _init_paths
 from xrmocap.data_structure.keypoints import Keypoints
 from xrmocap.transform.limbs import get_limbs_from_keypoints
 

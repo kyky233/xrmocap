@@ -7,6 +7,7 @@ import shutil
 import torch
 from xrprimer.utils.ffmpeg_utils import array_to_images, array_to_video
 
+import _init_paths
 from xrmocap.data_structure.smc_reader import SMCReader
 from xrmocap.human_perception.builder import build_detector
 from xrmocap.transform.image.color import bgr2rgb

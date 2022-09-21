@@ -1,6 +1,7 @@
 import numpy as np
 import torch
 
+import _init_paths
 from xrmocap.transform.image.color import bgr2rgb
 
 

@@ -4,6 +4,7 @@ import pytest
 import shutil
 import torch
 
+import _init_paths
 from xrmocap.data_structure.body_model.smpl_data import SMPLData
 from xrmocap.model.body_model.builder import build_body_model
 

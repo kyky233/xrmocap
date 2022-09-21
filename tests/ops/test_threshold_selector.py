@@ -2,6 +2,7 @@
 import mmcv
 import numpy as np
 
+import _init_paths
 from xrmocap.ops.triangulation.point_selection.builder import (
     build_point_selector,
 )

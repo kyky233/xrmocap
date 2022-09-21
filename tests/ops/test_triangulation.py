@@ -6,6 +6,7 @@ import pytest
 import shutil
 from xrprimer.data_structure.camera import PinholeCameraParameter  # noqa:E501
 
+import _init_paths
 from xrmocap.ops.triangulation.builder import build_triangulator
 
 input_dir = 'tests/data/ops/test_triangulation'
