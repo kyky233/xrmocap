@@ -5,7 +5,7 @@ import os.path as osp
 import shutil
 import torch
 
-from . import _init_paths
+import _init_paths
 from xrmocap.core.evaluation.builder import build_evaluation
 from xrmocap.data_structure.keypoints import Keypoints
 
