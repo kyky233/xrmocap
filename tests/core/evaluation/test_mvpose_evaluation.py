@@ -12,6 +12,7 @@ from xrmocap.data_structure.keypoints import Keypoints
 output_dir = 'tests/data/output/core/test_mvpose_evaluation'
 device = 'cpu' if not torch.cuda.is_available() else 'cuda'
 
+print(f"1111111111111111111111111111111111111111")
 
 @pytest.fixture(scope='module', autouse=True)
 def fixture():
@@ -31,9 +32,18 @@ def test_mvpose_evaluation():
         output_dir, 'scene0_pred_keypoints3d.npz')
     os.makedirs(output_dir, exist_ok=True)
     evaluation = build_evaluation(evaluation_config)
+    print(f"kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk")
     evaluation.run(overwrite=True)
+    print(f"ppppppppppppppppppppppppppppppppppppppppppppppppp")
     pred_keypoints3d = Keypoints.fromfile(
         osp.join(output_dir, 'scene0_pred_keypoints3d.npz'))
     pred_kps3d = pred_keypoints3d.get_keypoints()
+
+    print(f"lllllllllllllllllllllllllllllllllll")
     assert pred_kps3d.shape == (5, 2, 17, 4)
     assert pred_keypoints3d.get_mask().shape == (5, 2, 17)
+
+
+
+if __name__ == '__main__':
+    test_mvpose_evaluation()
