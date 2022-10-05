@@ -35,5 +35,11 @@ def test_mvpose_evaluation():
     pred_keypoints3d = Keypoints.fromfile(
         osp.join(output_dir, 'scene0_pred_keypoints3d.npz'))
     pred_kps3d = pred_keypoints3d.get_keypoints()
+
+    breakpoint()
     assert pred_kps3d.shape == (5, 2, 17, 4)
     assert pred_keypoints3d.get_mask().shape == (5, 2, 17)
+
+
+if __name__ == '__main__':
+    test_mvpose_evaluation()
